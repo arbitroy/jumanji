@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    height: 100%;
+    /* overflow: hidden; */
+    /* background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d); */
+    background-color: #fff;
+}
+
+::selection {
+    color: #fff;
+    background: #b5cb4c;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+    /* padding: 50px 35px 10px 35px; */
+}
+
+.container header {
+    text-transform: uppercase;
+    color: #008b8b;
+    font-weight: normal;
+    font-size: large;
+    font-weight: bold;
+    margin: 3%;
+    letter-spacing: 4px;
+}
+
+.container .form-outer {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
+.container .form-outer form {
+    display: flex;
+    width: 400%;
+}
+
+.form-outer form .page {
+    width: 25%;
+    transition: margin-left 0.3s ease-in-out;
+    border: 1px solid #808080;
+    border-radius: 3%;
+    /* box-shadow: 5px 10px 18px #888888; */
+    padding: 1%;
+    /* margin: 10px; */
+}
+
+.form-outer form .page .title {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #808080;
+}
+
+.form-outer form .page .field {
+    width: 90%;
+    height: 45px;
+    margin: 45px 0;
+    display: flex;
+    position: relative;
+}
+
+form .page .field .label {
+    position: absolute;
+    top: -30px;
+    font-weight: 500;
+}
+
+form .page .field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    letter-spacing: 1px
+}
+
+form .page .field select {
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+form .page .field button {
+    width: 100%;
+    height: calc(100% + 5px);
+    border: none;
+    background: #008b8b;
+    margin-top: -20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+form .page .field button:hover {
+    background: #000;
+}
+
+form .page .btns button {
+    margin-top: -20px!important;
+}
+
+form .page .btns button.prev {
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+form .page .btns button.next {
+    margin-left: 3px;
+}
